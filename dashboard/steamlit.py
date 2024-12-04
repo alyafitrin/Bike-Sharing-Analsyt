@@ -6,8 +6,8 @@ import streamlit as st
 # Load data
 @st.cache
 def load_data():
-    day_data = pd.read_csv("clean_day.csv")
-    hour_data = pd.read_csv("clean_hour.csv")
+    day_data = pd.read_csv("dashboard/clean_day.csv")
+    hour_data = pd.read_csv("dashboard/clean_hour.csv")
     return day_data, hour_data
 
 # Map seasons and years for better readability
